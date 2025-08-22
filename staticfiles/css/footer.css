@@ -1,0 +1,87 @@
+.footer-custom {
+             background: #B285C0;
+            color: white;
+            padding: 3rem 0 2rem 0;
+            border-radius: 25px;
+        }
+        
+        .footer-logo img {
+            height: 100px;
+            width: 120px;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
+        
+        .footer-heading {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        .contact-info {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .contact-info i {
+            margin-right: 0.5rem;
+            width: 16px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .exercise-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .opening-hours {
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 767.98px) {
+            .footer-custom {
+                padding: 2rem 0 1.5rem 0;
+            }
+            
+            .footer-section {
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            
+            .exercise-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            /* Removed vertical lines */
+        }

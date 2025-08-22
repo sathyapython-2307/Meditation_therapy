@@ -1,0 +1,567 @@
+ .meditation-section {
+            padding: 80px 0;
+            background: rgb(254,238,238);
+        }
+
+        .meditation-title {
+            text-align: center;
+            color: #8B4B8C;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -0.5px;
+        }
+
+        .meditation-description {
+            text-align: center;
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-free-trial {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-free-trial:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            color: white;
+        }
+
+        .main-btn {
+            margin-bottom: 60px;
+        }
+
+        .secondary-btn {
+            margin-top: 20px;
+        }
+
+        .featured-section {
+            margin-bottom: 80px;
+        }
+
+        .featured-content {
+            padding-right: 30px;
+        }
+
+        .featured-label {
+            color: #8B4B8C;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .featured-title {
+            color: #8B4B8C;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .featured-description {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .meditation-player {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            background: linear-gradient(135deg, #9c88d4 0%, #7b68d4 100%);
+            min-height: 300px;
+            width: 50%;
+        }
+
+        .player-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .player-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(156, 136, 212, 0.8) 0%, rgba(123, 104, 212, 0.8) 100%);
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .play-button:hover {
+            background: white;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .play-button i {
+            color: #8B4B8C;
+            font-size: 1.5rem;
+            margin-left: 3px;
+        }
+
+        .player-info {
+            margin-top: auto;
+        }
+
+        .track-title {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .player-controls {
+            color: white;
+        }
+
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.3);
+            height: 4px;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .progress-fill {
+            background: white;
+            height: 100%;
+            width: 25%;
+            border-radius: 2px;
+        }
+
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+
+        .daily-themes {
+            text-align: center;
+        }
+
+        .themes-title {
+            color: #333;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .theme-item {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .theme-item strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* NEW: Discovery Section Styles */
+        .discovery-section {
+            display: none;
+            background: #f8f4ff;
+            min-height: 100vh;
+            padding: 60px 0;
+        }
+
+        .discovery-title {
+            text-align: center;
+            color: #6F145F;
+
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        .meditation-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .meditation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .duration-bar {
+            background: #e0e7ff;
+            height: 6px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .duration-fill {
+            background: linear-gradient(45deg, #8b5cf6, #a78bfa);
+            height: 100%;
+            border-radius: 3px;
+        }
+
+        .duration-time {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .free-trial-btn {
+            background: black;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 40px auto;
+            display: block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .free-trial-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+            color: white;
+        }
+
+        .back-btn {
+            background: #6b7280;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #4b5563;
+        }
+
+        .instructor-name {
+            color: #666;
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .meditation-section {
+                padding: 60px 0;
+            }
+            
+            .meditation-title {
+                font-size: 2.2rem;
+                margin-bottom: 25px;
+            }
+            
+            .meditation-description {
+                font-size: 1rem;
+                margin-bottom: 35px;
+            }
+            
+            .main-btn {
+                margin-bottom: 50px;
+            }
+            
+            .featured-section {
+                margin-bottom: 60px;
+            }
+            
+            .featured-content {
+                padding-right: 0;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            
+            .featured-title {
+                font-size: 1.8rem;
+            }
+            
+            .themes-title {
+                font-size: 1.6rem;
+                margin-bottom: 35px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .meditation-section {
+                padding: 50px 0;
+            }
+            
+            .meditation-title {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            
+            .meditation-description {
+                font-size: 0.95rem;
+                margin-bottom: 30px;
+            }
+            
+            .btn-free-trial {
+                padding: 12px 30px;
+                font-size: 0.95rem;
+            }
+            
+            .main-btn {
+                margin-bottom: 40px;
+            }
+            
+            .featured-section {
+                margin-bottom: 50px;
+            }
+            
+            .featured-title {
+                font-size: 1.6rem;
+            }
+            
+            .featured-description {
+                font-size: 0.95rem;
+            }
+            
+            .meditation-player {
+                min-height: 250px;
+            }
+            
+            .player-image {
+                height: 250px;
+            }
+            
+            .player-overlay {
+                padding: 20px;
+            }
+            
+            .play-button {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .play-button i {
+                font-size: 1.2rem;
+            }
+            
+            .track-title {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+            }
+            
+            .themes-title {
+                font-size: 1.4rem;
+                margin-bottom: 30px;
+            }
+            
+            .theme-item {
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+            }
+
+            /* Discovery section mobile styles */
+            .discovery-section {
+                padding: 40px 0;
+            }
+            
+            .discovery-title {
+                font-size: 1.6rem;
+                margin-bottom: 30px;
+            }
+            
+            .meditation-card {
+                text-align: center;
+            }
+            
+            .card-image {
+                margin: 0 auto 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .meditation-section {
+                padding: 40px 0;
+            }
+            
+            .meditation-title {
+                font-size: 1.8rem;
+            }
+            
+            .meditation-description {
+                font-size: 0.9rem;
+                margin-bottom: 25px;
+            }
+            
+            .btn-free-trial {
+                padding: 10px 25px;
+                font-size: 0.9rem;
+            }
+            
+            .main-btn {
+                margin-bottom: 35px;
+            }
+            
+            .featured-section {
+                margin-bottom: 40px;
+            }
+            
+            .featured-title {
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+            }
+            
+            .featured-description {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            
+            .meditation-player {
+                min-height: 220px;
+                margin: auto;
+            }
+            
+            .player-image {
+                height: 220px;
+            }
+            
+            .player-overlay {
+                padding: 15px;
+            }
+            
+            .play-button {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .play-button i {
+                font-size: 1rem;
+            }
+            
+            .track-title {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+            
+            .time-display {
+                font-size: 0.8rem;
+            }
+            
+            .themes-title {
+                font-size: 1.3rem;
+                margin-bottom: 25px;
+            }
+            
+            .theme-item {
+                font-size: 0.9rem;
+                margin-bottom: 18px;
+                line-height: 1.5;
+            }
+
+            .discovery-title {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Animation effects */
+        .meditation-player {
+            transition: transform 0.3s ease;
+        }
+
+        .meditation-player:hover {
+            transform: translateY(-5px);
+        }
+
+        .theme-item {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .theme-item:nth-child(2) { animation-delay: 0.1s; }
+        .theme-item:nth-child(3) { animation-delay: 0.2s; }
+        .theme-item:nth-child(4) { animation-delay: 0.3s; }
+        .theme-item:nth-child(5) { animation-delay: 0.4s; }
+        .theme-item:nth-child(6) { animation-delay: 0.5s; }
+        .theme-item:nth-child(7) { animation-delay: 0.6s; }
+        .theme-item:nth-child(8) { animation-delay: 0.7s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+{% load static %}
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Section</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+        <div class="container-fluid">
+            <div class="hero-section">
+                <img src="{% static 'images/h1.png' %}" alt="Meditation at Sunset" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <a href="#join" class="join-btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+            <div class="dee-plus-section">
+        <div class="container-fluid dee-plus-container">
+            <!-- Heading -->
+            <h3 class="heading">What DEE PLUS <span>Stand for</span></h3>
+            <div class="row g-0">
+                <!-- Left column -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="dee-text px-3">
+                        <p><span class="letter">M</span><span class="title">Mindfulness</span><br><span class="desc">Being aware of the present</span></p>
+                        <p><span class="letter">E</span><span class="title">Equanimity</span><br><span class="desc">Calm and balanced emotions</span></p>
+                        <p><span class="letter">D</span><span class="title">Discipline</span><br><span class="desc">Consistency in practice</span></p>
+                        <p><span class="letter">I</span><span class="title">Inner Peace</span><br><span class="desc">A state of deep tranquility</span></p>
+                        <p><span class="letter">T</span><span class="title">Tranquility</span><br><span class="desc">Soothing the restless mind</span></p>
+                        <p><span class="letter">A</span><span class="title">Awareness</span><br><span class="desc">Conscious observation without reaction</span></p>
+                        <p><span class="letter">T</span><span class="title">Transformation</span><br><span class="desc">Gradual personal growth</span></p>
+                        <p><span class="letter">I</span><span class="title">Intention</span><br><span class="desc">Clarity of purpose</span></p>
+                        <p><span class="letter">O</span><span class="title">Observation</span><br><span class="desc">Watching thoughts without control</span></p>
+                        <p><span class="letter">N</span><span class="title">Now</span><br><span class="desc">Anchoring yourself in the present moment</span></p>
+                    </div>
+                </div>
+                <!-- Divider (hidden on mobile) -->
+                <div class="col-lg-1 d-none d-lg-flex justify-content-center align-items-start pt-4">
+                    <div class="divider"></div>
+                </div>
+                <!-- Right column -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="px-3">
+                        <div class="image-container">
+                            <img src="{% static 'images/h2.png' %}" alt="DEE PLUS" class="img-fluid">
+                        </div>
+                        <div class="therapy">
+                            <h5>In Therapy Helps With</h5>
+                            <p>Reducing stress and anxiety</p>
+                            <p>Enhancing focus and clarity</p>
+                            <p>Improving emotional regulation</p>
+                            <p>Promoting self-awareness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="clinic-section">
+                <div class="background-overlay"></div>
+                <div class="container clinic-content">
+                        <div class="row align-items-center">
+                                <!-- Left side - Image -->
+                                <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                                        <img src="{% static 'images/h4.png' %}" alt="Mental Health Support" class="clinic-image">
+                                </div>
+                                <!-- Right side - Content -->
+                                <div class="col-lg-7 col-md-6">
+                                        <div class="text-content px-lg-4">
+                                                <p class="text-black mb-2 fw-bold" style="font-size: 1.1rem;">Welcome To</p>
+                                                <h1 class="clinic-title">
+                                                        Private Psychiatry<br>
+                                                        <span style="font-size: 0.9em;">&amp; Therapy Clinic</span>
+                                                </h1>
+                                                <p class="clinic-description">
+                                                        A specialized healthcare facility offering confidential, 
+                                                        personalized mental health services, including 
+                                                        psychiatric evaluations, medication management, 
+                                                        and psychotherapy. Designed to provide discreet, 
+                                                        compassionate care for individuals seeking support 
+                                                        for emotional, behavioral, or psychological challenges.
+                                                </p>
+                                                <button class="btn meet-team-btn">
+                                                        Meet Our Team
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Statistics Section -->
+        <section class="stats-section">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="stat-item">
+                                                <span class="stat-number">1586</span>
+                                                <span class="stat-label">Session Per Year</span>
+                                        </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="stat-item">
+                                                <span class="stat-number">20</span>
+                                                <span class="stat-label">Year Experience</span>
+                                        </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="stat-item">
+                                                <span class="stat-number">5000+</span>
+                                                <span class="stat-label">Successful Therapy</span>
+                                        </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="stat-item">
+                                                <span class="stat-number">18</span>
+                                                <span class="stat-label">Specialist in Our team</span>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <!-- Text card -->
+        <a href="#" class="service-card">
+            <h3>Individual Therapy</h3>
+            <p>A private, one-on-one session with a therapist to explore personal challenges, improve mental health, and support emotional well-being.</p>
+            <div class="card-footer">
+                <span class="read-more">Read more</span>
+                <img src="{% static 'images/h5.png' %}" alt="icon" class="icon">
+            </div>
+        </a>
+        <!-- Image card -->
+        <a href="#" class="service-card image-card">
+            <img src="{% static 'images/h6.png' %}" alt="Therapy Image">
+        </a>
+        <!-- Colored text card -->
+        <a href="#" class="service-card colored">
+            <h3>Couples Therapy</h3>
+            <p>A type of counseling that helps partners improve communication, resolve conflicts, and strengthen their relationship in a supportive, guided setting.</p>
+            <div class="card-footer">
+                <span class="read-more">Read more</span>
+                <img src="{% static 'images/h7.png' %}" alt="icon" class="icon">
+            </div>
+        </a>
+        <!-- Text card -->
+        <a href="#" class="service-card">
+            <h3>Group Therapy</h3>
+            <p>A form of therapy where individuals with similar issues meet together with a therapist to share experiences, gain support, and develop coping skills in a safe, group setting.</p>
+            <div class="card-footer">
+                <span class="read-more">Read more</span>
+                <img src="{% static 'images/h8.png' %}" alt="icon" class="icon">
+            </div>
+        </a>
+        <!-- Image card -->
+        <a href="#" class="service-card image-card">
+            <img src="{% static 'images/h9.png' %}" alt="Family Image">
+        </a>
+        <!-- Text card -->
+        <a href="{% url 'therapy' %}?section=family" class="service-card">
+            <h3>Family Therapy</h3>
+            <p>A type of counseling that helps families improve communication, resolve conflicts, and strengthen relationships by working together with a licensed therapist.</p>
+            <div class="card-footer">
+                <span class="read-more">Read more</span>
+                <img src="{% static 'images/h10.png' %}" alt="icon" class="icon">
+            </div>
+        </a>
+        <!-- Image card -->
+        <a href="#" class="service-card image-card">
+            <img src="{% static 'images/h11.png' %}" alt="Group Image">
+        </a>
+        <!-- Text card -->
+        <a href="#" class="service-card">
+            <h3>Online Therapy</h3>
+            <p>Mental health support provided remotely through video, phone, or messaging, allowing individuals to connect with a licensed therapist from the comfort of their own space.</p>
+            <div class="card-footer">
+                <span class="read-more">Read more</span>
+                <img src="{% static 'images/h12.png' %}" alt="icon" class="icon">
+            </div>
+        </a>
+    </div>
+</section>
+<section class="testimonial-section">
+    <img src="{% static 'images/h13.png' %}" alt="Client" class="testimonial-img">
+    <h6>Testimonials</h6>
+    <h2>What Our Clients Says</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+                <p class="testimonial-text">
+                    “I never thought I could quiet my mind, but the guidance and support made it possible. I now look forward to each session.”
+                </p>
+                <p class="testimonial-author">— Daniel M.</p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+                <p class="testimonial-text">
+                    “This therapy changed my life. I feel stronger, more confident, and more at peace with myself.”
+                </p>
+                <p class="testimonial-author">— Sarah L.</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+                <p class="testimonial-text">
+                    “The online sessions gave me the flexibility I needed while still receiving great support.”
+                </p>
+                <p class="testimonial-author">— Michael B.</p>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+        <!-- Indicators -->
+        <div class="carousel-indicators mt-4">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+</section>
+<section class="team-section">
+    <div class="container position-relative">
+        <!-- Header -->
+        <p class="eyebrow">Meet Our Therapist</p>
+        <h2 class="headline">Our Team</h2>
+        <!-- Custom nav (doesn't use bootstrap control class names) -->
+        <div class="team-nav d-none d-md-flex">
+            <button type="button" class="team-btn team-prev" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="team-btn team-next" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+        <!-- Carousel -->
+        <div id="teamCarousel" class="carousel slide" data-bs-interval="0">
+            <div class="carousel-inner">
+                <!-- Slide 1 (4 cards; responsive: 1 on xs, 2 on md, 4 on lg) -->
+                <div class="carousel-item active">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-3">
+                            <div class="member-card">
+                                <img src="{% static 'images/h14.png' %}" alt="JansiMerry" class="member-photo">
+                                <div class="member-info">
+                                    <div class="member-name">JansiMerry</div>
+                                    <p class="member-role">Clinical Director / Psychologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-3">
+                            <div class="member-card">
+                                <img src="{% static 'images/h15.png' %}" alt="Rizza" class="member-photo">
+                                <div class="member-info">
+                                    <div class="member-name">Rizza</div>
+                                    <p class="member-role">Psychologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-3">
+                            <div class="member-card">
+                                <img src="{% static 'images/h16.png' %}" alt="John Smith" class="member-photo">
+                                <div class="member-info">
+                                    <div class="member-name">John Smith</div>
+                                    <p class="member-role">Clinical Director / Psychologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-3">
+                            <div class="member-card">
+                                <img src="{% static 'images/h17.png' %}" alt="Brady John" class="member-photo">
+                                <div class="member-info">
+                                    <div class="member-name">Brady John</div>
+                                    <p class="member-role">Psychologist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplicate this block for additional slides if you add more team members -->
+                <!--
+                <div class="carousel-item">
+                    <div class="row g-4 justify-content-center"> ...4 more cards... </div>
+                </div>
+                -->
+            </div>
+            <!-- Indicators (scoped to this carousel only) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <!-- Add more buttons if you add more slides -->
+            </div>
+        </div>
+        <p class="text-center mt-5">From the Blog</p>
+    </div>
+</section>
+<section class="articles-section">
+    <div class="container">
+        <h2 class="headline">Latest Articles</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="article-card">
+                    <img src="{% static 'images/h18.png' %}" alt="Article 1">
+                    <div class="article-body">
+                        <p class="article-date">News | April 21 2025</p>
+                        <h5 class="article-title">"Therapy Isn’t Just for Crisis—Here’s Why It Matters Every Day"</h5>
+                        <a href="#" class="article-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="article-card">
+                    <img src="{% static 'images/h19.png' %}" alt="Article 2">
+                    <div class="article-body">
+                        <p class="article-date">News | April 14 2025</p>
+                        <h5 class="article-title">"Can Online Therapy Be as Effective? Here’s What Research Says"</h5>
+                        <a href="#" class="article-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="article-card">
+                    <img src="{% static 'images/h20.png' %}" alt="Article 3">
+                    <div class="article-body">
+                        <p class="article-date">News | April 02 2025</p>
+                        <h5 class="article-title">"Breaking the Stigma: Why Seeing a Therapist Is a Strength"</h5>
+                        <a href="#" class="article-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq-section">
+        <h2 class="faq-title">FAQs</h2>
+        <div class="faq-container">
+                <div class="faq-item expanded">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3 class="faq-question-text">1. How do I know if I need therapy?</h3>
+                                <span class="faq-icon">−</span>
+                        </div>
+                        <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                        If you're feeling overwhelmed, anxious, low, or stuck—or simply want to better understand yourself—therapy can help. You don't need a crisis to benefit from mental health support.
+                                </div>
+                        </div>
+                </div>
+                <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3 class="faq-question-text">2. What is mental wellness?</h3>
+                                <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                        Mental wellness is a state of well-being in which you realize your own abilities, can cope with normal stresses of life, work productively, and contribute to your community. It encompasses emotional, psychological, and social well-being, affecting how we think, feel, and act in our daily lives.
+                                </div>
+                        </div>
+                </div>
+                <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3 class="faq-question-text">3. What types of therapy do you offer?</h3>
+                                <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                        We offer various therapeutic approaches including Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), mindfulness-based therapy, family therapy, couples counseling, and individual psychotherapy. Our therapists work with you to determine the best approach for your specific needs and goals.
+                                </div>
+                        </div>
+                </div>
+                <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3 class="faq-question-text">4. What can I expect in a therapy session?</h3>
+                                <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                        In your first session, your therapist will get to know you and understand your concerns. Subsequent sessions typically involve discussing your thoughts, feelings, and experiences in a safe, confidential environment. Your therapist may introduce coping strategies, exercises, or techniques tailored to your specific needs and therapeutic goals.
+                                </div>
+                        </div>
+                </div>
+        </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script>
+    // Hook custom buttons to the Bootstrap carousel instance
+    (function(){
+        var el = document.getElementById('teamCarousel');
+        var carousel = bootstrap.Carousel.getOrCreateInstance(el, { interval: false, ride: false });
+        var prevBtn = document.querySelector('.team-prev');
+        var nextBtn = document.querySelector('.team-next');
+        if(prevBtn) prevBtn.addEventListener('click', function(){ carousel.prev(); });
+        if(nextBtn) nextBtn.addEventListener('click', function(){ carousel.next(); });
+    })();
+</script>
+<script>
+/* FAQ Component JavaScript - Add this to your JS file */
+function toggleFAQ(element) {
+        const faqItem = element.parentElement;
+        const faqIcon = element.querySelector('.faq-icon');
+        const allItems = document.querySelectorAll('.faq-item');
+        // Close all other items
+        allItems.forEach(item => {
+                if (item !== faqItem) {
+                        item.classList.remove('expanded', 'active');
+                        const icon = item.querySelector('.faq-icon');
+                        icon.textContent = '+';
+                }
+        });
+        // Toggle current item
+        if (faqItem.classList.contains('expanded') || faqItem.classList.contains('active')) {
+                faqItem.classList.remove('expanded', 'active');
+                faqIcon.textContent = '+';
+        } else {
+                faqItem.classList.add('expanded', 'active');
+                faqIcon.textContent = '−';
+        }
+}
+// Add smooth interactions
+document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                // Add hover effects
+                question.addEventListener('mouseenter', function() {
+                        if (!item.classList.contains('expanded') && !item.classList.contains('active')) {
+                                question.style.transform = 'translateX(5px)';
+                        }
+                });
+                question.addEventListener('mouseleave', function() {
+                        question.style.transform = 'translateX(0)';
+                });
+        });
+        // Add staggered animation on page load
+        faqItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                        item.style.transition = 'all 0.5s ease';
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                }, index * 100);
+        });
+});
+</script>
+</body>
+{% include 'footer.html' %}
+</html>
+</head>
+<!-- Removed duplicate welcome and logout block -->

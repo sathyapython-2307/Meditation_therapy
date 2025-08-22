@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: rgb(254,238,238);
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 60px auto;
+            padding: 40px 30px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+        }
+        h2 {
+            color: #d16d6d;
+            margin-bottom: 24px;
+            font-size: 2rem;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #f5bcbc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 12px;
+            background: linear-gradient(90deg, #f5bcbc 0%, #f7caca 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(209,109,109,0.08);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #d16d6d 0%, #f5bcbc 100%);
+            box-shadow: 0 4px 16px rgba(209,109,109,0.12);
+        }
+        p {
+            text-align: center;
+        }
+        a {
+            color: #d16d6d;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="form-container">
+        {% if messages %}
+            <ul style="list-style:none;padding:0;">
+            {% for message in messages %}
+                <li style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %}; margin-bottom: 10px; font-weight: 500;">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

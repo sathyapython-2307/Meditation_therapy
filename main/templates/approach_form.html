@@ -1,0 +1,119 @@
+{% load static %}
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approach Form - DEE PLUS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {  background-color: rgb(254,238,238)!important; }
+        .approach-form-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px rgba(162,60,138,0.08);
+            padding: 32px 24px;
+        }
+        .approach-form-title {
+            color: #a23c8a;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .approach-form-subtitle {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .form-label { font-weight: 500; }
+        .form-control, .form-select {
+            background: #ddbae7 !important;
+            border: none !important;
+            border-radius: 8px !important;
+        }
+        .btn-approach-submit {
+            background: linear-gradient(90deg,#a23c8a,#6d1a6d);
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+        @media (max-width: 600px) {
+            .approach-form-container { padding: 16px 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="approach-form-container">
+        <h3 class="approach-form-title">How to Mentally Prepare for Fatherhood, According to a Parenting Coach</h3>
+        <h4 class="approach-form-subtitle">Approach Form</h4>
+        <form method="post">
+            {% csrf_token %}
+            <div class="row mb-2">
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <label class="form-label">First Name</label>
+                    <input type="text" name="first_name" class="form-control" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" name="last_name" class="form-control" required>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Mobile No</label>
+                <input type="text" name="mobile" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">E- Mail Id</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">No . Of Therapy Day</label>
+                <select name="therapy_days" class="form-select">
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Family Members Count</label>
+                <input type="number" name="family_count" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Address</label>
+                <textarea name="address" class="form-control" rows="2" required></textarea>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Time Availability</label>
+                <select name="time_availability" class="form-select">
+                    <option value="">Select</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Current City</label>
+                <input type="text" name="city" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-approach-submit w-100">Submit</button>
+        </form>
+        {% if messages %}
+            <div class="mt-3">
+                {% for message in messages %}
+                    <div class="alert alert-info">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+{% include 'footer.html' %}
+</html>

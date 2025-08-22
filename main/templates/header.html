@@ -1,0 +1,56 @@
+{% load static %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/header.css' %}">
+<nav class="navbar navbar-expand-lg navbar-custom">
+	<div class="container">
+		<!-- Logo -->
+		<a class="navbar-brand" href="#">
+			<img src="{% static 'images/logo.png' %}" alt="Dee Plus Logo">
+		</a>
+		<!-- Toggle button for mobile -->
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Navigation Menu -->
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'home' %}">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'therapy' %}">Therapy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'about' %}">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'meditation' %}">Meditation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+				</li>
+			</ul>
+			<!-- Right side icons -->
+			<div class="d-flex align-items-center">
+				<a href="#search" class="header-icons text-decoration-none">
+					<i class="fas fa-search"></i>
+				</a>
+				{% if user.is_authenticated %}
+					<span class="header-icons text-decoration-none" style="margin-right: 10px; font-weight: 500; color: #d16d6d;">
+						{{ user.username }}
+					</span>
+					<a href="{% url 'logout' %}" class="header-icons text-decoration-none" style="color: #d16d6d;">
+						<i class="fas fa-sign-out-alt"></i> Logout
+					</a>
+				{% else %}
+					<a href="{% url 'login' %}" class="header-icons text-decoration-none">
+						<i class="fas fa-user"></i> Login
+					</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

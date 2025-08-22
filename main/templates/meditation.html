@@ -1,0 +1,227 @@
+{% load static %}
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/meditation.css' %}">
+    <title>Meditation</title>
+</head>
+<body>
+    <section class="meditation-section" id="meditation-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="meditation-title">Meditation</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="meditation-description">Meditation is a practice of focusing the mind and achieving a state of calm and clarity, often through techniques like breathing, mindfulness, or visualization.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn-free-trial main-btn" onclick="showDiscovery()">Start Your Free Trial</button>
+                </div>
+            </div>
+            <div class="row align-items-center featured-section">
+                <div class="col-lg-6 col-md-6">
+                    <div class="featured-content">
+                        <p class="featured-label">Featured Meditation</p>
+                        <h3 class="featured-title">Sleep Meditation</h3>
+                        <p class="featured-description">The sleep struggle is very real. Nighttime meditation can help. This dreamy practice reduces stress, calms the mind, and improves sleep quality, so you can actually get a good night's rest. Try it here and tell us how you feel in the morning.</p>
+                        <button class="btn-free-trial secondary-btn" onclick="showDiscovery()">Start Your Free Trial</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="meditation-player">
+                        <img src="{% static 'images/m1.png' %}" alt="Sleep Meditation" class="player-image">
+                        <div class="player-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="player-info">
+                                <h4 class="track-title">Soothe Anxiety to Sleep</h4>
+                                <div class="player-controls">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="time-display">
+                                        <span class="current-time">0:00</span>
+                                        <span class="total-time">30:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="daily-themes">
+                        <h3 class="themes-title">Daily Themes (5-10 minutes each)</h3>
+                        <div class="theme-item">
+                            <strong>Day 1 - Gratitude</strong><br>
+                            Focus on 3 things you're thankful for. Feel the warmth they bring.
+                        </div>
+                        <div class="theme-item">
+                            <strong>Day 2 - Loving-Kindness</strong><br>
+                            Silently repeat: "May I be happy. May others be happy."
+                        </div>
+                        <div class="theme-item">
+                            <strong>Day 3 - Present Moment Joy</strong><br>
+                            Mindfully notice small joys—breath, light, sound—with full attention.
+                        </div>
+                        <div class="theme-item">
+                            <strong>Day 4 - Smile Meditation</strong><br>
+                            Gently smile while breathing slowly. Let the feeling of ease spread.
+                        </div>
+                        <div class="theme-item">
+                            <strong>Day 5 - Positive Memories</strong><br>
+                            Recall a joyful moment. Re-experience it with all your senses.
+                        </div>
+                        <div class="theme-item">
+                            <strong>Day 6 - Self-Compassion</strong><br>
+                            Send kindness to yourself. Affirm: "I am enough. I deserve joy."
+                        </div>
+                        <div class="theme-item">
+                            <strong>Day 7 - Intentional Joy</strong><br>
+                            Visualize a joyful life. Imagine waking up smiling, living freely.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discovery-section" id="discovery-section" style="display:none;">
+        <div class="container">
+            <button class="back-btn" onclick="showMeditation()">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <h2 class="discovery-title">Discover popular meditations.</h2>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="meditation-card">
+                        <div class="d-flex align-items-start">
+                            <img src="{% static 'images/m2.png' %}" alt="Pascal Auclair" class="card-image me-3">
+                            <div class="flex-grow-1">
+                                <p class="instructor-name mb-1">Pascal Auclair</p>
+                                <h3 class="card-title">Rediscover the Familiar</h3>
+                                <p class="card-description">This is the first time you've ever been here, now. Pascal invites you to discover the vivid and mysterious experience of this new moment.</p>
+                                <div class="duration-bar">
+                                    <div class="duration-fill" style="width: 15%;"></div>
+                                </div>
+                                <div class="duration-time">
+                                    <span>0:00</span>
+                                    <span>5:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="meditation-card">
+                        <div class="d-flex align-items-start">
+                            <img src="{% static 'images/m3.png' %}" alt="Alex Lion" class="card-image me-3">
+                            <div class="flex-grow-1">
+                                <p class="instructor-name mb-1">Alex Lion</p>
+                                <h3 class="card-title">Natural mindful walking meditation</h3>
+                                <p class="card-description">A 15 minute guided walk mindfully will soothe the nervous system, get you outside and can refresh you mentally when you're feeling low or off.</p>
+                                <div class="duration-bar">
+                                    <div class="duration-fill" style="width: 60%;"></div>
+                                </div>
+                                <div class="duration-time">
+                                    <span>0:00</span>
+                                    <span>15:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="meditation-card">
+                        <div class="d-flex align-items-start">
+                            <img src="{% static 'images/m4.png' %}" alt="Simone Suthers" class="card-image me-3">
+                            <div class="flex-grow-1">
+                                <p class="instructor-name mb-1">Simone Suthers</p>
+                                <h3 class="card-title">Being with Big Emotions</h3>
+                                <p class="card-description">Bring an open-hearted curiosity to your big emotions and get to know yourself more fully, developing resilience to deal with all the feels.</p>
+                                <div class="duration-bar">
+                                    <div class="duration-fill" style="width: 49%;"></div>
+                                </div>
+                                <div class="duration-time">
+                                    <span>0:00</span>
+                                    <span>9:50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="meditation-card">
+                        <div class="d-flex align-items-start">
+                            <img src="{% static 'images/m5.png' %}" alt="Jozeph Glucksman" class="card-image me-3">
+                            <div class="flex-grow-1">
+                                <p class="instructor-name mb-1">Jozeph Glucksman</p>
+                                <h3 class="card-title">Balanced Compassion</h3>
+                                <p class="card-description">We're living in challenging times. Try practicing balance, letting you open to the suffering of the world without becoming overwhelmed.</p>
+                                <div class="duration-bar">
+                                    <div class="duration-fill" style="width: 35%;"></div>
+                                </div>
+                                <div class="duration-time">
+                                    <span>0:00</span>
+                                    <span>7:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="meditation-card">
+                        <div class="d-flex align-items-start">
+                            <img src="{% static 'images/m6.png' %}" alt="Sidonie Delaunx" class="card-image me-3">
+                            <div class="flex-grow-1">
+                                <p class="instructor-name mb-1">Sidonie Delaunx</p>
+                                <h3 class="card-title">Self-kindness for stress</h3>
+                                <p class="card-description">Showing self compassion to ourselves in hard times bolsters our resilience, so we can learn from setbacks rather than getting stuck in rumination.</p>
+                                <div class="duration-bar">
+                                    <div class="duration-fill" style="width: 65%;"></div>
+                                </div>
+                                <div class="duration-time">
+                                    <span>0:00</span>
+                                    <span>13:09</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="free-trial-btn">Get 14 Days Free Trial</button>
+        </div>
+    </section>
+    <script>
+        function showDiscovery() {
+            document.getElementById('meditation-section').style.display = 'none';
+            document.getElementById('discovery-section').style.display = 'block';
+        }
+        function showMeditation() {
+            document.getElementById('discovery-section').style.display = 'none';
+            document.getElementById('meditation-section').style.display = 'block';
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+{% include 'footer.html' %}
+</html>

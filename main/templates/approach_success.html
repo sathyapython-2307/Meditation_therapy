@@ -1,0 +1,60 @@
+{% load static %}
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approach Accepted</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body { background: #ff6a6a; }
+        .success-container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 2px 16px rgba(162,60,138,0.08);
+            padding: 32px 24px;
+            text-align: center;
+        }
+        .success-image {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 32px;
+            margin-bottom: 24px;
+        }
+        .success-title {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .success-subtitle {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+        }
+        .success-link {
+            color: #000;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .success-code {
+            color: #3c8aa2;
+            font-size: 1.1rem;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container" style="background:#ff6a6a; box-shadow:none; border-radius:24px; max-width:420px; margin:40px auto; padding:32px 24px; text-align:center;">
+        <img src="{% static 'images/s1.png' %}" alt="Accepted" style="max-width:220px; margin-bottom:18px; border-radius:24px;">
+        <div class="success-title" style="color:#fff; font-size:1.5rem; font-weight:bold; text-align:center; margin-bottom:8px;">Your Approach Has been Accepted</div>
+        <div class="success-subtitle" style="color:#fff; font-size:1.1rem; text-align:center; margin-bottom:18px;">Complete your Payment Process Quickly</div>
+    <a href="{% url 'payment_details' %}" style="margin-bottom:8px; font-size:1.1rem; color:#000; text-align:center; text-decoration:underline; display:inline-block;">Click Here</a>
+        <div style="color:#6ee2e2; font-size:1.1rem; word-break:break-all; text-align:center;">gfjhgfj263h52kdzgb56gfhgc</div>
+    </div>
+</body>
+{% include 'footer.html' %}
+</html>

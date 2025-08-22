@@ -1,0 +1,86 @@
+{% load static %}
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact DEE PLUS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="contact-container">
+            <div class="hero-section">
+                <img src="{% static 'images/c1.png' %}" alt="Meditation" class="hero-image">
+                <div class="hero-text-overlay">
+                    <h4>"Reach out — we're here to<br>help you find your inner peace."</h4>
+                </div>
+            </div>
+            <h2 class="contact-title">Contact DEE PLUS</h2>
+            <div class="contact-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <h6>Address:</h6>
+                            <p>6, Hethendran Street,<br>Kongu Nagar,<br>Karur - 26</p>
+                        </div>
+                        <div class="contact-info">
+                            <h6>Mobile No:</h6>
+                            <p>+9532 32556</p>
+                        </div>
+                        <div class="contact-info">
+                            <h6>E-Mail Id:</h6>
+                            <p>deepluswell@gmail.com</p>
+                        </div>
+                        <div class="contact-info">
+                            <h6>General Enquirers</h6>
+                            <p>Got a general question?<br>Please use this Contact Form to reach out to us.</p>
+                        </div>
+                        <div class="contact-info">
+                            <h6>Feedback</h6>
+                            <p>Do you have something to say about<br>The Guided Meditation Site? Feel free to<br>give us your feedback via this Contact Form.</p>
+                        </div>
+                        <div class="contact-info mb-0">
+                            <h6>Opening Time</h6>
+                            <p>Monday - Sunday<br>9:00 AM To 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Mobile No" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="E-Mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="recaptcha-container">
+                                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9; text-align: center; width: 100%; max-width: 300px;">
+                                    <label style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                                        <input type="checkbox" style="transform: scale(1.2);">
+                                        <span style="font-size: 0.9rem; color: #666;">I am Not Robot</span>
+                                        <i class="fas fa-shield-alt" style="color: #4285f4; font-size: 1.2rem;"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-contact">Contact Us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+{% include 'footer.html' %}
+</html>
