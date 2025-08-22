@@ -28,7 +28,21 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-xik$tg8&xobib_
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
 # Allow configuring allowed hosts via environment variable (comma separated)
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost').split(',')
+if DEBUG:
+    # Development convenience only
+    ALLOWED_HOSTS = ['*']
+else:
+    # Production: prefer explicit hosts or env var
+    hosts_env = os.environ.get('DJANGO_ALLOWED_HOSTS')
+    if hosts_env:
+        ALLOWED_HOSTS = [h.strip() for h in hosts_env.split(',') if h.strip()]
+    else:
+        render_host = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+        ALLOWED_HOSTS = [render_host] if render_host else [
+            'meditation-therapy.onrender.com',
+            'localhost',
+            '127.0.0.1',
+        ]
 
 
 # Application definition
